@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Icono de la pagina-->
+    <link rel="icon" href="img/cantante.png"">
+</head>
+<body>
+    <nav >
+        <img class="img" src="img/discos_logo.png" alt="">
+
+        <ul class="navegacion">
+            
+            <li><a href="index.html">Inicio</a></li>
+
+        </ul>
+    </nav>
+    <footer class="formulario">
+
+        <form id="contact"action="" method="">
+            <h2>Dejanos tu musica favorita</h2>
+
+            <label for="contact_name">Ingrese su nombre</label><!-- rotula al formulario -->
+            <input
+            placeholder="Ej: Matias"
+            id="contact_name"
+            name="name"   
+            type="text" 
+            maxlength="50"
+            required>
+              <!--campo de formulario, monolinea sin cierre--> 
+            <label for="contact_email">Ingrese su correo</label>
+            <input
+            placeholder="Ej: pepito@gmail.com"
+            id="contact_email"
+            name="email"
+            type="email"
+            maxlength="50"
+            required>
+            
+            <label for="contact_subjet">Seleccione el genero musical</label>
+            <select name="subjet" id="contact_subjet">
+
+                <option value="">Elige el genero</option>
+                <option value="Rock">Rock</option>
+                <option value="Cumbia">Cumbia</option>
+                <option value="Rap">Rap</option>
+                <option value="Latino">Latino</option>
+                <option value="Pop">Pop</option>
+                <option value="Electronica">Electronica</option><!--Value:lo que se va a enviar a travez del formulario , el usuario no escribe-->
+                <option value="Trap">Trap</option><!--Dentro del value debe haber algo que entienda el ususario-->
+                required
+            </select>
+            
+            <label for="contact_consult">Ingrese el nombre de la canción</label>
+            <textarea 
+            name="consult" 
+            id="contact_consult" 
+            cols="30" 
+            rows="10"
+            maxlength="30"
+            required></textarea>
+            
+            <button>Enviar</button>
+
+            <!--name:Campo a completar-->
+            <!--al vincular el label al tocarlo se une con el form y el id que tienen el mismo valor y al hacerle click al label me enviara a completar el formulario-->
+        
+        </form>
+        <div class="social">
+            <a class="facebook" href="https://www.facebook.com/matiasezequiel.mendoza.9" target="_blank" title="Seguinos en facebook"></a>
+            
+            <a class="instagram" href="https://www.instagram.com/eze_mendoza17/"target="_blank" title="Seguinos en instagram"></a>
+            <a class="whatsapp" href="https://api.whatsapp.com/send?phone=1170001025&text=Buenas,mi%20consulta es"target="_blank" title="Seguinos en whatsapp"></a>
+        </div>
+    </footer><!--pie de pagina-->
+</body>
+</html>
